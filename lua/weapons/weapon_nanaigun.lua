@@ -86,7 +86,7 @@ function SWEP:PrimaryAttack()
 		if ( self.LoopSound ) then
 			self.LoopSound:ChangeVolume( 1, 0.1 )
 		else
-			self.LoopSound = CreateSound( self.Owner, Sound( "weapons/nanai/nanai_loop.wav" ) )
+			self.LoopSound = CreateSound( self.Owner, Sound( "weapons/nanai/nanai_loop.ogg" ) )
 			if ( self.LoopSound ) then self.LoopSound:Play() end
 		end
 		if ( self.BeatSound ) then self.BeatSound:ChangeVolume( 0, 0.1 ) end
