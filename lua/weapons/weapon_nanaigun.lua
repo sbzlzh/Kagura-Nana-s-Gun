@@ -64,7 +64,10 @@ if string.find(gm,"terrortown") then
     SWEP.Kind   = WEAPON_EQUIP2
     SWEP.CanBuy = { ROLE_TRAITOR } --{ ROLE_TRAITOR } or { ROLE_DETECTIVE }
     SWEP.LimitedStock = true
-
+	SWEP.Primary.Damage = 5
+	SWEP.Primary.ClipSize = 128
+	SWEP.Primary.DefaultClip = 128
+	SWEP.Primary.ClipMax = 128
     function SWEP:IsEquipment() return false end
 end
 
